@@ -59,6 +59,11 @@ export class Member extends User {
   }
 
   private _email: string;
+  static roleName: string = "Member";
+
+  static getRoleName() {
+    return "Your role is " + this.roleName;
+  }
 
   set email(val: string) {
     // Validasi email
@@ -78,3 +83,5 @@ const member1 = new Member("Adi", 18, "adi123@gmail.com");
 console.log(member1.email);
 member1.email = "adi277@protonmai";
 console.log(member1.email);
+console.log(Member.roleName);
+console.log(Member.getRoleName());
