@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "ts-watch": "rm -rf build/ && tsc -w",
     "ts-build": "rm -rf build/ && tsc",
-    "dev": "nodemon ./build/genericClass.js"
+    "dev": "nodemon ./build/module/Product.js"
   },
   "author": "",
   "license": "ISC",
